@@ -6,7 +6,7 @@ const Header = () => {
   const navigate = useNavigate();
   const handleLogut = ()=>{
     // 나중에 로그아웃 처리 할 곳
-    navigate('/');
+    navigate('/login');
   }
   return (
     <header className="header">
@@ -22,7 +22,7 @@ const Header = () => {
         </nav>
       </div>
       <div className="header-right">
-        <button className="logout-btn" onClick={handleLogut}>Logout</button>
+        <button className="logout-btn" onClick={handleLogut}>Login</button>
       </div>
     </header>
   );
