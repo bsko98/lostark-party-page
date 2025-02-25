@@ -1,12 +1,16 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Header.css'; 
 import { useNavigate } from 'react-router-dom';
 
-const Header = () => {
+const Header = ( {isLogin, setIsLogin}) => {
   const navigate = useNavigate();
-  const handleLogut = ()=>{
-    // 나중에 로그아웃 처리 할 곳
+  const handleLogin = ()=>{
     navigate('/login');
+  }
+  const handleLogout = ()=>{
+    //나중에 로그아웃 처리
+    setIsLogin(false);
+    navigate('/');
   }
   return (
     <header className="header">
@@ -22,7 +26,11 @@ const Header = () => {
         </nav>
       </div>
       <div className="header-right">
-        <button className="logout-btn" onClick={handleLogut}>Login</button>
+       {
+        isLogin ? 
+        (<button className="logout-btn" onClick={handleLogout}>Logout</button>):
+        (<button className="logout-btn" onClick={handleLogin}>Login</button>)
+       }
       </div>
     </header>
   );

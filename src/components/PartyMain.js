@@ -6,6 +6,17 @@ import Modal from './Modal';
 
 const PartyMain = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const containers = [
+    { id: 1, difficulty: "하드", title: "카멘 하드", people: "3/8", range: "1-3", tags: ["숙련", "무풀초"] },
+    { id: 2, difficulty: "노말", title: "카멘 노말", people: "5/8", range: "1-3", tags: ["숙제", "엘릭서40"] },
+    { id: 3, difficulty: "하드", title: "카멘 하드2", people: "2/8", range: "1-2", tags: ["반숙", "방풀초"] },
+    
+  ];
+  const boxStyle = {
+    border: "1px solid #333",
+
+    textAlign: "center",
+  };
   return (
     <div className = "maincontainer">
       <div className = "box"> 
@@ -23,7 +34,19 @@ const PartyMain = () => {
       </div>
       <div className = "box"> 
         <div className = "leftcontainer">
-         left
+        {containers.map((item) => (
+        <div className="partycontainer" key={item.id}>
+          <div className="difficulty" style={boxStyle}>{item.difficulty}</div>
+          <div className="title" style={boxStyle}>{item.title}</div>
+          <div className="people" style={boxStyle}>{item.people}</div>
+          <div className="buttoncontainer">
+            <button className="applybutton" >신청</button>
+          </div>
+          <div className="questionrange" style={boxStyle}>{item.range}</div>
+          <div className="tags" style={boxStyle}>{item.tags.join(" ")}</div>
+          
+        </div>
+      ))}
         </div>
       </div>
       <div className = "box"> 
