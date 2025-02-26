@@ -1,0 +1,66 @@
+.step-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+    width: 94%; 
+    max-width: 100%; 
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex-grow: 1; 
+}
+
+.radio-hidden {
+    display: none;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 2; 
+}
+
+.circle.selected {
+    background-color: black;
+}
+
+.line {
+    position: absolute;
+    top: 25%; 
+    left: 50%;
+    transform: translateX(0);
+    width: 100%;
+    max-width: 15vw; 
+    height: 2px;
+    background-color: black;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.step .circle.selected + .line {
+    visibility: visible;
+}
+
+.step-label {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
