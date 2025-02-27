@@ -1,0 +1,10 @@
+.character-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 700px;
+    height: 100px;
+    border: 2px solid #333;
+    padding-right: 25px; 
+}
+
