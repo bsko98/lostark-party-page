@@ -2,10 +2,10 @@ import React , {useState} from 'react';
 import './App.css';
 import './components/Header.js'
 import './components/Footer.js'
-import './components/PartyMain.js'
+import './pages/PartyMain.js'
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
-import PartyMain from './components/PartyMain.js';
+import PartyMain from './pages/PartyMain.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 

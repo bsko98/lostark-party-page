@@ -2,8 +2,9 @@ import React from 'react';
 import './PartyMain.css'; 
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import Modal from './Modal';
-import SkillIndicator from './SkillIndicator.js';
+import Modal from '../components/Modal';
+import SkillIndicator from '../components/SkillIndicator';
+import PartyFilter from '../components/PartyFilter';
 
 const PartyMain = () => {
  
@@ -70,7 +71,7 @@ const PartyMain = () => {
       <div className = "box"> 
         <div className = "rightcontainer">
         <SkillIndicator onSelectTags={handleSelectTags} />
-
+        <PartyFilter></PartyFilter>
         </div>
       </div>
     </div>
