@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# 로아 인력 사무소
+로스트아크 파티 모집 웹 애플리케이션
+
+## 프로젝트 소개
+이 프로젝트는 기존 로스트아크 인게임 파티모집의 불편함을 개선하여 유저들에게 보다 나은 파티모집 서비스를 제공하는 웹 애플리케이션입니다.
+
+## 사용기술
+프론트엔드: React(19.0.0), Axios(1.8.1)
+
+
+ 백엔드: 
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
