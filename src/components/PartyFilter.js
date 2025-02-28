@@ -46,9 +46,8 @@ const PartyFilter = () => {
         </div>
 
         <button className={`refresh-button ${refreshTime > 0 ? "disabled" : ""}`} onClick={() => refreshTime === 0 && setRefreshTime(8)} disabled={refreshTime > 0}>
-          {refreshTime > 0 ? `갱신(${refreshTime}s)` : "갱신"}
+          {refreshTime > 0 ? `내 캐릭터 갱신(${refreshTime}s)` : "내 캐릭터 갱신(칭호/카드)"}
         </button>
-
         <div className="input-row">
           <label>칭호</label>
           <select className="dropdown half-width">
@@ -68,7 +67,7 @@ const PartyFilter = () => {
           </select>
         </div>
         <div className="input-row">
-          <label>스타일</label>
+          <label>분위기</label>
           <select className="dropdown half-width">
             <option>선택</option>
           </select>
@@ -88,8 +87,9 @@ const PartyFilter = () => {
           <label>도약</label>
           <input type="text" className="input-box half-width" placeholder="입력" />
         </div>
+        <div className="input-row">초월</div>
         <div className="input-row">
-          <label>초월</label>
+          <label>무기</label>
           <input type="number" min="0" max="21" value={weaponLevel} onChange={(e) => setWeaponLevel(e.target.value)} className="input-box half-width" placeholder="0~21" />
         </div>
         <div className="input-row">
@@ -111,7 +111,7 @@ const PartyFilter = () => {
           </label>
         </div>
 
-        <button className="btn blue full-width">신청한 파티 토큰</button>
+        <button className="btn blue full-width">신청한 파티 토글</button>
       </div>
     </div>
   );
