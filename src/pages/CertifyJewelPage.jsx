@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './CertifyJewelPage.css'
 
 
 function CertifyJewelPage() {
@@ -27,8 +28,8 @@ function CertifyJewelPage() {
 
 
   return (
-    <div className='container'>
-          <div className='info-box'>보석 추가하는법 설명 나오는부분</div>
+    <div className='jewel-container'>
+          <div className='jewel-info-box'>보석 추가하는법 설명 나오는부분</div>
           <div>
             <input type='text'/>
             <button onClick={handlemycharacter}>인증하기</button>

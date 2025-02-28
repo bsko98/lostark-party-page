@@ -10,11 +10,11 @@ const Modal = ({ isOpen, onClose }) => {
         if (e.target.classList.contains('modaloverlay')) {
             onClose();
         }
-    };
+    };//모달 외부 클릭시 닫게 하는 부분분
 
     const handleItemClick = (item) => {
         console.log(item);
-    };
+    };// 여기는 서버 클릭부분 나중에 이거랑 캐릭터 클릭시 데이터 가져와야함.
 
     return (
         <div className="modaloverlay" onClick={handleOverlayClick}>
@@ -26,7 +26,7 @@ const Modal = ({ isOpen, onClose }) => {
                         </button>
                     ))}
                 </div>
-                <button onClick={onClose}>닫기</button>
+                {/* <button onClick={onClose}>닫기</button> */}
             </div>
         </div>
     );

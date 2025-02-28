@@ -19,7 +19,6 @@ const PartyMain = () => {
   const [selectedSkills, setSelectedSkills] = useState([]);
   const boxStyle = {
     border: "1px solid #333",
-
     textAlign: "center",
   };
 
