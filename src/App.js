@@ -8,6 +8,7 @@ import Footer from './components/Footer.js';
 import PartyMain from './pages/PartyMain.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
+import MyCharacterInfoPage from './pages/MyCharacterInfoPage'
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<LoginPage isLogin={isLogin} setIsLogin={setIsLogin}/>} />
           <Route path="/" element={<PartyMain/>} />
+          <Route path="/mycharacter" element={<MyCharacterInfoPage/>}/>
           {console.log("app login test "+isLogin)}
         </Routes>
       </div>

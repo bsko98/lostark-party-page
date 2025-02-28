@@ -13,13 +13,13 @@ const users = [
 
 function MyCharacterInfoPage() {
   return (
-    <div className="container">
-        <div className="box">
+    <div className="mycontainer">
+        <div className="mybox">
             {users.map(user => (
                 <MyCharacterInfo key={user.id} user={user} />
             ))}
 
-            <button className='addButton' onClick={()=>{console.log("추가하기")}}>추가하기</button>
+            <button className='myaddButton' onClick={()=>{console.log("추가하기")}}>추가하기</button>
         </div>
     </div>
   )

@@ -1,21 +1,23 @@
-.box{
+.mybox{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 900px;
+    width: 800px;
     height: 650px;
     border: 2px solid #333;
-    background-color: #f5d682;
+    /* background-color: #f5d682; */
 }
 
-.container {
+.mycontainer {
     display: flex;
     justify-content: center; /* 가로 중앙 정렬 */
     align-items: center; /* 세로 중앙 정렬 */
-    height: 100vh; /* 화면 전체 높이 */
+    height: 78vh; /* 화면 전체 높이 */
+    
   }
 
-.addButton{
+.myaddButton{
     margin-top: auto;
+    margin-bottom: 5px;
 }  
