@@ -1,0 +1,79 @@
+/* 로그인 페이지 전체 컨테이너 */
+.login-container {
+    width: 350px;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 로고 스타일 */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #333;
+    margin-bottom: 20px;
+  }
+  
+  /* 입력 그룹 (아이디 & 비밀번호) */
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
+  /* 로그인 버튼 */
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #555;
+  }
+  
+  /* 옵션 버튼 (아이디 찾기, 비밀번호 재설정, 회원가입) */
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .option-btn {
+    flex: 1;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #333;
+    background: white;
+    cursor: pointer;
+    font-size: 12px;
+    height: 40px;
+  }
+  
+  .option-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
