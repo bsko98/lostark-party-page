@@ -88,8 +88,9 @@ const PartyFilter = () => {
           <label>도약</label>
           <input type="text" className="input-box half-width" placeholder="입력" />
         </div>
+        <div className="input-row">초월</div>
         <div className="input-row">
-          <label>초월</label>
+          <label>무기</label>
           <input type="number" min="0" max="21" value={weaponLevel} onChange={(e) => setWeaponLevel(e.target.value)} className="input-box half-width" placeholder="0~21" />
         </div>
         <div className="input-row">
