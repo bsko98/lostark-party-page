@@ -10,7 +10,7 @@ const Modal = ({ isOpen, onClose }) => {
         if (e.target.classList.contains('modaloverlay')) {
             onClose();
         }
-    };//모달 외부 클릭시 닫게 하는 부분분
+    };//모달 외부 클릭시 닫게 하는 부분
 
     const handleItemClick = (item) => {
         console.log(item);
