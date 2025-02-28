@@ -9,10 +9,10 @@
     margin-bottom: 25px;
 }
 
-.container {
+.addcontainer {
     display: flex;
     justify-content: center; /* 가로 중앙 정렬 */
     align-items: center; /* 세로 중앙 정렬 */
     flex-direction: column;
-    height: 100vh; /* 화면 전체 높이 */
+    height: 78vh; /* 화면 전체 높이 */
   }
