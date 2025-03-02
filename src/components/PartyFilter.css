@@ -1,60 +1,65 @@
 .party-filter-container {
     display: flex;
     width: 100%;
-    height: 250px;
-    border: 2px solid black;
+    height: 205px;
+    border: 1px solid black;
     padding: 0;
 }
 
 .filter-section {
     flex: 1;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 .left-section {
-    border-right: 2px solid black;
+    border-right: 1px solid black;
 }
 
 .input-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
-    font-size: 12px;
+    gap: 5px;
+    font-size: 11px;
 }
+
 .input-row label {
     flex: 1;
-    text-align: left; 
+    text-align: left;
+    font-size: 11px;
 }
 
 .input-row .half-width {
     flex: 1;
-    text-align: right;  
-    width: 50%;
-    font-size: 12px;
+    text-align: right;
+    width: 45%;
+    font-size: 11px;
+    padding: 3px;
 }
 
 .filter-options {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 12px;
+    gap: 5px;
+    font-size: 11px;
 }
 
 .checkbox-group {
     display: flex;
-    gap: 10px;
-    font-size: 12px;
+    gap: 5px;
+    font-size: 11px;
+
 }
 
 .refresh-button {
     background-color: #d6d6d6;
     border: 1px solid black;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 11px;
+    padding: 3px 6px;
 }
 
 .refresh-button.disabled {
@@ -64,11 +69,5 @@
 
 .full-width {
     width: 100%;
-    font-size: 12px;
-}
-
-@media screen and (max-width: 768px) {
-    .party-filter-container {
-        flex-direction: column;
-    }
+    font-size: 11px;
 }

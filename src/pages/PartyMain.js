@@ -5,6 +5,7 @@ import Modal from "../components/Modal";
 import SkillIndicator from "../components/SkillIndicator";
 import PartyFilter from "../components/PartyFilter";
 import RaidSelecter from "../components/RaidSelecter";
+import PartyTable from "../components/PartyTable";
 
 const PartyMain = () => {
   const dataContainers = [
@@ -93,12 +94,14 @@ const PartyMain = () => {
             ) : (
               <p className="no-results">선택한 조건에 맞는 파티가 없습니다.</p>
             )}
+
           </div>
         </div>
         <div className="box">
           <div className="rightcontainer">
             <SkillIndicator onSelectTags={handleSelectTags} />
             <PartyFilter filterDataArr={filterDataArr} setFilterDataArr={setFilterDataArr}/>
+            <PartyTable></PartyTable>
           </div>
         </div>
       </div>

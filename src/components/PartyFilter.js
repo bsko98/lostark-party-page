@@ -51,7 +51,6 @@ const PartyFilter = ({ filterDataArr, setFilterDataArr }) => {
     console.log(isMyPartyToggle);
   };
   const filterdata = () => {
-    // 새로운 객체를 한 번에 생성하여 추가
     const newFilterData = {
       selectedOption,
       isChecked,
