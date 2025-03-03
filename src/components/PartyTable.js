@@ -2,7 +2,6 @@ import React from "react";
 import "./PartyTable.css";
 
 const PartyTable = () => {
-  // 파티 데이터 (4개)
   const parties = [
     { id: 1, name: "1 파티" },
     { id: 2, name: "2 파티" },
@@ -10,7 +9,6 @@ const PartyTable = () => {
     { id: 4, name: "4 파티" },
   ];
 
-  // 각 파티별 멤버 데이터 (4명씩 고정)
   const members = Array(4).fill({
     job: "직업",
     nickname: "닉네임",
