@@ -1,0 +1,35 @@
+.myaccount-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.myaccount-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 110px;
+}
+
+.myaccount-lastrow{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.leave-button{
+    background-color: #ff0000;
+    width: 100px;
+    height: 40px;
+}
+
+.round-button{
+    border-radius: 50%; 
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    margin-top: 24px;
+}

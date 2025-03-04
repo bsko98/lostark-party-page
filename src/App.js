@@ -11,6 +11,7 @@ import LoginPage from './pages/LoginPage';
 import MyCharacterInfoPage from './pages/MyCharacterInfoPage'
 import AddMyCharacterPage from './pages/AddMyCharacterPage';
 import CertifyJewelPage from './pages/CertifyJewelPage';
+import MyAccountPage from './pages/MyAccountPage.jsx';
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
@@ -24,6 +25,7 @@ function App() {
           <Route path="/mycharacter" element={<MyCharacterInfoPage/>}/>
           <Route path="/addmycharacter" element={<AddMyCharacterPage/>}/>
           <Route path="/certifyjewelpage" element={<CertifyJewelPage/>}/>
+          <Route path="/MyAccountPage" element={<MyAccountPage/>}/>
           {console.log("app login test "+isLogin)}
         </Routes>
       </div>
