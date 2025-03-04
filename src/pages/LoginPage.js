@@ -2,7 +2,7 @@ import React ,{useState} from 'react';
 import './LoginPage.css';
 import { useNavigate } from 'react-router-dom';
 import { SHA256 } from 'crypto-js';
-
+import SignupForm from '../components/SignupForm';
 
 const LoginPage = ({isLogin, setIsLogin}) => {
   const [id, setId] = useState('');
@@ -24,6 +24,9 @@ const LoginPage = ({isLogin, setIsLogin}) => {
     console.log(isLogin);
     navigate('/');
   };
+  const handleSignup = () => {
+    navigate('/signup');
+  }
 
   return (
     <div className="login-container">
@@ -40,7 +43,7 @@ const LoginPage = ({isLogin, setIsLogin}) => {
       <div className="options">
         <button className="option-btn">아이디 찾기</button>
         <button className="option-btn">비밀번호 재설정</button>
-        <button className="option-btn">회원가입</button>
+        <button className="option-btn" onClick={handleSignup}>회원가입</button>
       </div>
     </div>
   );

@@ -50,22 +50,22 @@
 .party-members {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 2px;
   padding: 2px;
 }
 
 .party-member {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
   font-size: 11px;
   text-align: left;
   border: 1px solid black;
 }
 
 .party-member img {
-  width: 18px; 
-  height: 18px; 
+  width: 17px; 
+  height: 17x; 
 }
 
 .job,

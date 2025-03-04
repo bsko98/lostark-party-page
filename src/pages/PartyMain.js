@@ -35,6 +35,7 @@ const PartyMain = () => {
   const handleSelectRaid = (category, raid) => {
     setSelectedRaidCategory(category);
     setSelectedRaid(raid);
+    console.log("카테고리 -> "+category+"  레이드 -> " +raid);
     applyFilters(category, raid, selectedSkills);
   };
 
@@ -60,7 +61,7 @@ const PartyMain = () => {
 
   return (
     <div className="raidselecterbox">
-      <RaidSelecter onSelectRaid={handleSelectRaid} />
+      <RaidSelecter onSelectRaid={handleSelectRaid}/>
 
       <div className="maincontainer">
         <div className="box">
