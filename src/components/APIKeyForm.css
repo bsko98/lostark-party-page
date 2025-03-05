@@ -1,0 +1,105 @@
+.api-form-container {
+    width: 560px;
+    height: 442px;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.api-logo {
+   
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.api-info-box {
+    width: 403px;
+    height: 78.96px;
+    background-color: #f8f8f8;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.api-input-group {
+    width: 403px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.api-input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.api-input-group input {
+    width: 403px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.api-input{
+    width: 403px;
+}
+.api-label{
+    font-size: 12px;
+    border: 1px solid black;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 60px;
+    width:78px;
+    height: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.api-key-link {
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top:40px;
+    margin-bottom: 15px;
+}
+
+.api-button-group {
+    width: 403px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.api-btn {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.api-btn.primary {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 60px;
+}
+
+.api-btn.secondary {
+    background-color: white;
+    color: black;
+    border-radius: 60px;
+}
+
+

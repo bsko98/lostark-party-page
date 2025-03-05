@@ -30,20 +30,20 @@ const LoginPage = ({isLogin, setIsLogin}) => {
 
   return (
     <div className="login-container">
-      <div className="logo">로고</div>
-      <div className="input-group">
+      <div className="login-logo">로고</div>
+      <div className="login-input-group">
         <label>아이디</label>
         <input type="text" value={id} onChange = {handleIdChange} placeholder="아이디를 입력해주세요." />
       </div>
-      <div className="input-group">
+      <div className="login-input-group">
         <label>비밀번호</label>
         <input type="password" value={password} onChange = {handlePasswordChange} placeholder="비밀번호를 입력해주세요." />
       </div>
-      <button className="login-button" onClick ={handleLogin} >로그인</button>
-      <div className="options">
-        <button className="option-btn">아이디 찾기</button>
-        <button className="option-btn">비밀번호 재설정</button>
-        <button className="option-btn" onClick={handleSignup}>회원가입</button>
+      <button className="login-login-button" onClick ={handleLogin} >로그인</button>
+      <div className="login-options">
+        <button className="login-option-btn">아이디 찾기</button>
+        <button className="login-option-btn">비밀번호 재설정</button>
+        <button className="login-option-btn" onClick={handleSignup}>회원가입</button>
       </div>
     </div>
   );

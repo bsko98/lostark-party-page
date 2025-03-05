@@ -21,6 +21,7 @@ const SignupForm = () => {
         if (!isPasswordMatch) {
         setError("비밀번호가 일치하지 않습니다.");
         alert("비밀번호가 일치하지 않습니다.");
+        navigator('/optional');
         return;
         }
 
@@ -79,7 +80,7 @@ const SignupForm = () => {
             required
             />
             {!isPasswordMatch && <p className="error-text">비밀번호가 일치하지 않습니다.</p>}
-            <label className="signuplabel" >이메일</label>
+            <label className="signuplabel" >이메일(선택사항)</label>
             <input
             className="signupinput"
             type="email"

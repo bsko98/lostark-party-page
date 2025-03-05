@@ -12,6 +12,7 @@ import MyCharacterInfoPage from './pages/MyCharacterInfoPage'
 import AddMyCharacterPage from './pages/AddMyCharacterPage';
 import CertifyJewelPage from './pages/CertifyJewelPage';
 import SignupForm from './components/SignupForm';
+import APIKeyForm from './components/APIKeyForm';
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
@@ -26,6 +27,7 @@ function App() {
           <Route path="/addmycharacter" element={<AddMyCharacterPage/>}/>
           <Route path="/certifyjewelpage" element={<CertifyJewelPage/>}/>
           <Route path="/signup" element={<SignupForm/>}></Route>
+          <Route path="/optional" element={<APIKeyForm/>}/>
           {console.log("app login test "+isLogin)}
         </Routes>
       </div>

@@ -8,13 +8,14 @@ const users = [
     { id: 2, img: 'https://img.lostark.co.kr/armory/7/8F9F2D53C455C5535B999691FED87CFE9273078D819F3995A934A798C1FCCCAF.jpg',server:'아만', classes:'블레이드', itemLev:'1585', nickname: 'bsko'},
     { id: 3, img:'https://img.lostark.co.kr/armory/4/1F274B265DD776C43936AB61D1B8DC572BD94BB0791F281E6A109EF1E3735FE3.jpg',server:'아만', classes: '스카우터',  itemLev:'1600', nickname: '쌀려줘요'}
   ];
- 
+
 
 function MyCharacterInfoPage() {
   const navigate = useNavigate();
   const handleaddcharacter = ()=>{
     navigate('/addmycharacter');
   }
+
 
   return (
     <div className="mycontainer">

@@ -11,7 +11,7 @@
   }
   
   /* 로고 스타일 */
-  .logo {
+  .login-logo {
     font-size: 24px;
     font-weight: bold;
     padding: 10px;
@@ -20,18 +20,18 @@
   }
   
   /* 입력 그룹 (아이디 & 비밀번호) */
-  .input-group {
+  .login-input-group {
     margin-bottom: 15px;
     text-align: left;
   }
   
-  .input-group label {
+  .login-input-group label {
     display: block;
     font-size: 14px;
     margin-bottom: 5px;
   }
   
-  .input-group input {
+  .login-input-group input {
     width: 100%;
     padding: 10px;
     border: 2px solid #333;
@@ -56,13 +56,13 @@
   }
   
   /* 옵션 버튼 (아이디 찾기, 비밀번호 재설정, 회원가입) */
-  .options {
+  .login-options {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
   }
   
-  .option-btn {
+  .login-option-btn {
     flex: 1;
     padding: 5px;
     margin: 5px;
@@ -73,7 +73,7 @@
     height: 40px;
   }
   
-  .option-btn:hover {
+  .login-option-btn:hover {
     background-color: #f0f0f0;
   }
   
